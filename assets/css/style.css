@@ -1,29 +1,28 @@
 :root {
-    --title: rgb(12, 93, 12);
-    --tables: green;
-    --footer: green;
-    --tableHead: rgb(28, 216, 28);
-  }
-  
-  .title {
-    background-color: var(--title);
-    padding-left: 10px;
-
-  }
-  
-  .all-tables {
-    padding-top: 3rem;
-    background-color: var(--tables);
-  }
-  
-  footer {
-    background-color: var(--footer);
-    text-align: center;
-  }
-  
-#table-title {
-    font-size: 1.5rem;
-    color: var(--tableHead);
-    font-weight: bold;
+  --title: rgb(12, 93, 12);
+  --tables: green;
+  --footer: green;
+  --tableHead: rgb(28, 216, 28);
 }
-.padding {margin: 10px;}
+
+.title {
+  background-color: var(--title);
+  padding-left: 10px;
+}
+
+.all-tables {
+  padding-top: 3rem;
+  background-color: var(--tables);
+}
+
+footer {
+  background-color: var(--footer);
+  text-align: center;
+}
+
+#table-title {
+  font-size: 1.5rem;
+  color: var(--tableHead);
+  font-weight: bold;
+}
+
