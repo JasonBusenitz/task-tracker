@@ -47,7 +47,9 @@ header {
     content: '🌪';
 }
 
-.content {
+/* ids */
+
+#content {
     display: flex;
     justify-content: center;
     align-items: center;

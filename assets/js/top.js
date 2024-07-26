@@ -1,1 +1,3 @@
-const renderTopTasks = fun
+const taskContainer = document.getElementById('content')
+
+renderTasks('top', taskContainer); 
