@@ -56,9 +56,18 @@
   <button style="font-size: 4em;">&#129412;</button> 
   <button style="font-size: 4em;">&#127786;</button> 
  <div class="container" id="task-container">
-   <table id="task-list">
- 
-   </table>
+  <table class="table table-hover" id="task-list">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">
+          <a id="table-title" href="./top.html">Top Priority</a>
+        </th>
+      </tr>
+    </thead>
+    <tbody id="topPrio">
+    </tbody>
+  </table>
  </div>
   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
     Add Task
