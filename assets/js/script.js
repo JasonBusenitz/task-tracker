@@ -1,11 +1,11 @@
-const renderTasks = function (priority, parentElement) {
-    const allTasks = JSON.parse(localStorage.getItem('tasks'))
-    const currentPriorityTasks = allTasks.filter(function (task) {
-        return task.priority === priority;
-    })
-    currentPriorityTasks.forEach(function (task) {
-        const item = document.createElement('li')
-        item.textContent = task.task
-        parentElement.appendChild(item)
-    })
+const tablesContainer = document.querySelector("#all-tables-container");
+
+function strikeOut(event) {
+  const target = event.target;
+  if (target.matches(".task-item")) {
+    target.setAttribute("class", "strikeout");
+  }
 }
+
+tablesContainer.addEventListener("click", strikeOut);
+
