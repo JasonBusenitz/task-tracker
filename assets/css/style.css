@@ -4,7 +4,6 @@
   --footer: green;
   --tableHead: rgb(28, 216, 28);
 }
-
 .title {
   background-color: var(--title);
   padding-left: 10px;
@@ -28,4 +27,9 @@ footer {
 
 .text-body-secondary {
   color: rgb(222, 225, 220);
+}
+
+.table .strikeout {
+  text-decoration: line-through;
+  color: #aaa;
 }
