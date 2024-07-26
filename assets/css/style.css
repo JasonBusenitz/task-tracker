@@ -9,6 +9,10 @@
   padding-left: 10px;
 }
 
+.task-item {
+  background-color: #fff9f9;
+}
+
 .all-tables {
   padding: 3rem;
   background-color: var(--tables);
@@ -28,7 +32,7 @@ footer {
   font-weight: bold;
 }
 
-.display-6  {
+.display-6 {
   color: rgb(196, 198, 194);
 }
 
@@ -42,4 +46,5 @@ footer {
 }
 
 .table td {
-  font-size: 1.25rem;}
+  font-size: 1.25rem;
+}
