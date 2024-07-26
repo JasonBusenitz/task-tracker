@@ -1,0 +1,59 @@
+/* tags */
+
+body {
+    background-color: #27ae60;
+}
+
+header {
+    border-bottom: 1rem solid black;
+}
+
+/* classes */
+
+.body {
+    background-color: #f5f5dc;
+}
+
+.nav-row {
+    flex-wrap: nowrap;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: nowrap;
+    flex: 1 1 auto;
+    justify-content: flex-end;
+    text-decoration: none;
+    color: black;
+}
+
+.nav a {
+    padding: 1rem;
+    text-decoration: none;
+    flex-wrap: nowrap;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.title::before::after {
+    content: '🌪';
+}
+
+/* ids */
+
+#content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+/* media quereys */

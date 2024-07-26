@@ -1,0 +1,62 @@
+.body {
+    background-color: rgb(22, 101, 104);
+}
+
+header {
+    border-bottom: 1rem solid black;
+}
+
+body header div a {
+    color: darkgoldenrod;
+}
+
+.nav-row {
+    flex-wrap: nowrap;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: nowrap;
+    flex: 1 1 auto;
+    justify-content: flex-end;
+    text-decoration: none;
+    color: black;
+}
+
+.nav a {
+    padding: 1rem;
+    text-decoration: none;
+    flex-wrap: nowrap;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+/* media quereys */
+@media screen and (max-width: 980px) {
+    main {
+        flex-wrap: column;
+    }
+}
+
+@media screen and (max-width: 720px) {
+
+    main,
+    body {
+        flex-wrap: wrap;
+    }
+}

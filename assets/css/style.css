@@ -1,23 +1,25 @@
 :root {
   --title: rgb(12, 93, 12);
-  --tables: green;
+  --tables: #f1c40f;
   --footer: green;
   --tableHead: rgb(28, 216, 28);
 }
-
 .title {
   background-color: var(--title);
   padding-left: 10px;
 }
 
 .all-tables {
-  padding-top: 3rem;
+  padding: 3rem;
   background-color: var(--tables);
+  padding-bottom: 2rem;
+  padding-left: 2rem;
 }
 
 footer {
-  background-color: var(--footer);
+  /* background-color: var(--footer); */
   text-align: center;
+  margin-top: 3rem;
 }
 
 #table-title {
@@ -26,7 +28,15 @@ footer {
   font-weight: bold;
 }
 
-.text-body-secondary {
-  color: rgb(222, 225, 220);
+.display-6  {
+  color: rgb(196, 198, 194);
 }
 
+.table .strikeout {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+.col-12 {
+  padding-left: 2rem;
+}

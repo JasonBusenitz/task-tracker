@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="/assets/css/reset.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -15,7 +15,7 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/style.css"/>
     <title>The Squeegee Board</title>
   </head>
   <body class="text-bg-success">
@@ -75,9 +75,7 @@
       <section class="title-block"> <!--float???-->
         <section class="title">
           <h1 class="display-1">The Squeegee Board</h1>
-          <h2 class="display-6">
-            <small class="text-body-secondary">a one stop task manager</small>
-          </h2>
+          <h2 class="display-6"> a onestop task manager</h2>
         </section>
         <section class="padding">
           <h3>&nbsp;</h3>
@@ -86,10 +84,10 @@
     </header>
     <main>
       <!--Table-->
-      <div class="all-tables">
-        <div class="container text-center">
+      <div  id="all-tables-container">
+        <div class="container text-center all-tables">
           <div class="row align-items-start ">
-            <div class="col-12 col-lg-4">
+            <div class="col-12 col-lg-4"> <!--Start of Table-->
               <table class="table table-hover">
                 <thead>
                   <tr>
@@ -99,19 +97,7 @@
                     </th>
                   </tr>
                 </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td></td>
-                  </tr>
+                <tbody id="topPrio">
                 </tbody>
               </table>
             </div>
@@ -127,19 +113,7 @@
                     </th>
                   </tr>
                 </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td></td>
-                  </tr>
+                <tbody id="medPrio">
                 </tbody>
               </table>
             </div>
@@ -153,19 +127,7 @@
                     </th>
                   </tr>
                 </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td></td>
-                  </tr>
+                <tbody id="lowPrio">
                 </tbody>
               </table>
             </div>
@@ -188,5 +150,7 @@
       integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
       crossorigin="anonymous"
     ></script>
+    <script src="./assets/js/index.js"></script>
+    <script src ="./assets/js/script.js"></script>
   </body>
 </html>
