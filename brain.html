@@ -55,9 +55,11 @@
   <button style="font-size: 4em;">&#128012;</button> 
   <button style="font-size: 4em;">&#129412;</button> 
   <button style="font-size: 4em;">&#127786;</button> 
-  <ol>
-
-  </ol>
+ <div class="container" id="task-container">
+   <table id="task-list">
+ 
+   </table>
+ </div>
   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
     Add Task
 </button>
@@ -76,7 +78,7 @@
                 <label class="form-label text-primary" for="priorityInput">Enter Priority</label>
                 <select class="form-select" id="priorityInput" name="priorityInput">
                     <option value="low">Low</option>
-                    <option value="medium">Medium</option>
+                    <option value="med">Medium</option>
                     <option value="top">Top</option>
                 </select>
             </div>
@@ -99,6 +101,7 @@
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
       crossorigin="anonymous"
     ></script>
+    <script src="./assets/js/logic.js"></script>
       <script src="./assets/js/brain.js" type="text/javascript"></script>
     
   
