@@ -40,3 +40,6 @@ footer {
 .col-12 {
   padding-left: 2rem;
 }
+
+.table td {
+  font-size: 1.25rem;}
