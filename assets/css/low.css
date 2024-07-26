@@ -1,17 +1,13 @@
-/* tags */
-
-body {
-    background-color: #27ae60;
+.body {
+    background-color: rgb(22, 101, 104);
 }
 
 header {
     border-bottom: 1rem solid black;
 }
 
-/* classes */
-
-.body {
-    background-color: #f5f5dc;
+body header div a {
+    color: darkgoldenrod;
 }
 
 .nav-row {
@@ -43,13 +39,7 @@ header {
     margin-top: 1rem;
 }
 
-.title::before::after {
-    content: '🌪';
-}
-
-/* ids */
-
-#content {
+.content {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,3 +47,16 @@ header {
 }
 
 /* media quereys */
+@media screen and (max-width: 980px) {
+    main {
+        flex-wrap: column;
+    }
+}
+
+@media screen and (max-width: 720px) {
+
+    main,
+    body {
+        flex-wrap: wrap;
+    }
+}

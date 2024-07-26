@@ -1,6 +1,14 @@
-/*Click Modal, add item, item appears with three emojiis, 
-upon click of emojii item is stringified into local 
-storage with appropriate label. */
+const taskField = document.getElementById("taskInput");
+const priorityField = document.getElementById("priorityInput");
+const savebutton = document.getElementById("savebutton");
+savebutton.addEventListener("click", function () {
+  const currentTasks = JSON.parse(localStorage.getItem("tasks")) || [];
+  let task = taskField.value.trim();
+  let priority = priorityField.value.trim();
+  currentTasks.push({ task, priority });
+  localStorage.setItem("tasks", JSON.stringify(currentTasks));
+  location.reload();
+});
 
 /*Click Modal (event Listener) and a li is added with the given text*/
 
