@@ -48,3 +48,7 @@ footer {
 .table td {
   font-size: 1.25rem;
 }
+
+.brain-task-item:hover {
+  background-color: #f1c40f;
+}
