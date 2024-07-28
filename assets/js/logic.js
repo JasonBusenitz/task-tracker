@@ -18,6 +18,7 @@ const renderTasks = function (array, element, page) {
     if (!page) {
       newCell.innerHTML = `<span class="mr-4">${array[i].task}</span>
          <span class="btn-group change-priority"> 
+<<<<<<< HEAD
             <button data-index="${i}" data-priority="low" type="button" class="btn btn-primary ${
         array[i].priority === "low" ? "active" : ""
       }">Low</button>
@@ -33,8 +34,22 @@ const renderTasks = function (array, element, page) {
     }
     newCell.classList.add("task-item", "brain-task-item");
 
+=======
+            <button data-index="${i}" data-priority="low" type="button" class="btn btn-primary ${array[i].priority === "low" ? "active" : ""}">&#x1F40C;</button>
+            <button data-index="${i}" data-priority="med" type="button" class="btn btn-primary ${array[i].priority === "med" ? "active" : ""}">&#x1F984;</button>
+            <button data-index="${i}" data-priority="top" type="button" class="btn btn-primary ${array[i].priority === "top" ? "active" : ""}">&#x1F407;</button>
+        </span>`;
+    } else {
+      newCell.textContent = array[i].task;
+    }
+    newCell.classList.add("task-item");
+>>>>>>> 8619486e7d902ef5f10cb977c6e14a58a93fbed5
     newRow.appendChild(newHeader);
     newRow.appendChild(newCell);
     document.getElementById(element).appendChild(newRow);
   }
+<<<<<<< HEAD
 };
+=======
+};
+>>>>>>> 8619486e7d902ef5f10cb977c6e14a58a93fbed5
